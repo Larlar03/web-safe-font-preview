@@ -1,75 +1,320 @@
-body {
-  width: 100vw;
-  background-color: #e68aa5;
-  margin: 0;
-  padding: 0;
+/*MOBILE*/
+@media (min-width: 320px) and (max-width: 480px) {
 
-  .outer-container {
-    width: 80%;
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 0 auto;
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(116, 235, 213);
+    background: linear-gradient(90deg, rgba(116, 235, 213, 0.8) 0%, rgba(172, 182, 229, 0.8) 70%);
+    font-size: 14px;
+
     header {
+      width: 100%;
+      height: auto;
+      margin: 30px auto 50px auto;
       text-align: center;
 
+
       h1 {
-        letter-spacing: 10px;
-        text-align: center;
+        font-size: 2rem;
+        color: #ffffff;
+
       }
 
       h2 {
-        text-align: center;
-        letter-spacing: 2px;
+        font-size: 1rem;
+        color: #353434;
       }
     }
 
-    .formHolder {
-      background-color: #8acae6;
-      border-radius: 4px 4px 0px 0px;
-      margin: 4px auto 0 auto;
-      padding: 20px;
+    main {
+      max-width: 90%;
       height: auto;
-      width: 100%;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      ;
 
-      form {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-evenly;
+      .form-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
 
-        .third {
+        form {
           display: flex;
-          height: 100%;
-          text-align: center;
-
-          input {
-            display: inline;
+          flex-flow: column nowrap;
+          margin-bottom: 20px;
+          .third {
+            padding: 5px 0;
+            font-weight: 500;
           }
-
-          #fonts {
-            margin-left: 4px;
+          #font-size {
+            display: flex;
+            flex-flow: row nowrap;
+            input {
+              height: 50%;
+              margin-left: 7px;
+            }
           }
-
-          #weight {}
         }
       }
-    }
 
-    .preview {
+      .preview {
         width: 100%;
-      align: center;
-      background: white;
-      margin: 0 auto;
-      min-height: 150px;
-      padding: 30;
-      word-wrap: break-word;
+        height: auto;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        padding: 5px;
+      }
 
-      textarea {
-        border: 1px solid #8ae6ca;
-        border-radius: 4px;
-        display: block;
-        margin: 30px auto;
-        padding: 20px
+      #text {
+        width: 100%;
+        padding: 5px;
       }
     }
   }
+}
+
+/*MOBILE LANDSCAPE*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(116, 235, 213);
+    background: linear-gradient(90deg, rgba(116, 235, 213, 0.8) 0%, rgba(172, 182, 229, 0.8) 70%);
+    font-size: 14px;
+
+    header {
+      width: 100%;
+      height: auto;
+      margin: 30px auto 50px auto;
+      text-align: center;
+
+
+      h1 {
+        font-size: 2rem;
+        color: #ffffff;
+
+      }
+
+      h2 {
+        font-size: 1rem;
+        color: #353434;
+      }
+    }
+
+    main {
+      max-width: 90%;
+      height: auto;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      ;
+
+      .form-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        form {
+          display: flex;
+          flex-flow: column nowrap;
+          margin-bottom: 20px;
+          .third {
+            padding: 5px 0;
+            font-weight: 500;
+          }
+          #font-size {
+            display: flex;
+            flex-flow: row nowrap;
+            input {
+              height: 50%;
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+
+      .preview {
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        padding: 5px;
+      }
+
+      #text {
+        width: 100%;
+        padding: 5px;
+      }
+    }
+  }
+
+}
+
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(116, 235, 213);
+    background: linear-gradient(90deg, rgba(116, 235, 213, 0.8) 0%, rgba(172, 182, 229, 0.8) 70%);
+    font-size: 14px;
+
+    header {
+      width: 100%;
+      height: auto;
+      margin: 50px auto;
+      text-align: center;
+
+
+      h1 {
+        font-size: 3rem;
+        color: #ffffff;
+
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: #353434;
+      }
+    }
+
+    main {
+      max-width: 70%;
+      height: auto;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: column;
+
+
+      .form-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        form {
+          display: flex;
+          flex-flow: column nowrap;
+          margin-bottom: 20px;
+          .third {
+            padding: 5px 0;
+            font-weight: 500;
+          }
+          #font-size {
+            display: flex;
+            flex-flow: row nowrap;
+            input {
+              height: 50%;
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+
+      .preview {
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        padding: 5px;
+      }
+
+      #text {
+        width: 100%;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 1025px) and (max-width: 1500px) {
+
+
+  body {
+    width: 100%;
+    height: 100%;
+    background: rgb(116, 235, 213);
+    background: linear-gradient(90deg, rgba(116, 235, 213, 0.8) 0%, rgba(172, 182, 229, 0.8) 70%);
+    font-size: 14px;
+
+    header {
+      width: 100%;
+      height: auto;
+      margin: 50px auto;
+      text-align: center;
+
+
+      h1 {
+        font-size: 3rem;
+        color: #ffffff;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: #353434;
+      }
+    }
+
+    main {
+      max-width: 70%;
+      height: auto;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .form-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        form {
+          display: flex;
+          flex-flow: row nowrap;
+          width: 100%;
+          justify-content: space-evenly;
+
+          .third {
+            text-align: center;
+            max-width: 33%;
+            padding-bottom: 40px;
+            font-weight: 500;
+          }
+        }
+
+        #font-size {
+          display: flex;
+          flex-flow: row nowrap;
+
+          input {
+            width: 40%;
+            text-align: center;
+            margin-left: 7px;
+          }
+        }
+      }
+
+      .preview {
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        padding: 5px;
+      }
+
+      #text {
+        width: 100%;
+        padding: 5px;
+      }
+    }
+  }
+
 }
