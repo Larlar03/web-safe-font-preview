@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<head> 
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Font!</title>
@@ -17,20 +17,28 @@
 
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pirata+One&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <!--HEADER-->
   <header>
     <h1>Font!</h1>
-    <h2>Test out some web safe fonts </h2>
+    <h2>Sample Web Safe Fonts</h2>
   </header>
+
+  <!--MAIN-->
   <main>
+    <!--FORM CONTAINER-->
     <div class="form-container">
       <form method="POST">
-        <div class="third">
-          Font Family <select name="font" id="font">
-
-            <option value="select" id="select">Select</option>
+        <!--FONT FAMILY SELECTION-->
+        <div class="third font-family">
+          <h3>Font Family</h3><select name="font" id="font">
             <option value="andale mono" id="andale-mono">Andale Mono</option>
             <option value="arial" id="arial">Arial</option>
             <option value="arial black" id="arial-black">Arial Black</option>
@@ -75,24 +83,27 @@
             <option value="verdana" id="verdana">Verdana</option>
           </select>
         </div>
-        <div class="third" id="font-size">
-          Font Size
-          <br>
-          <input type="text" placeholder="12" id="size">
-        </div>
-        <div class="third">
-          Font Weight <select name="weight" id="weight">
-            <option value="select">Select</option>
+        <!--FONT WEIGHT SELECTION-->
+        <div class="third font-weight">
+          <h3>Font Weight</h3> <select name="weight" id="weight">
             <option value="normal">Normal</option>
             <option value="bold">Bold</option>
             <option value="bolder">Bolder</option>
             <option value="lighter">Lighter</option>
           </select>
         </div>
+        <!--FONT SIZE SELECTION-->
+        <div class="third" id="font-size">
+          <h3>Font Size</h3>
+          <input type="text" placeholder="12" id="size">
+        </div>
       </form>
     </div>
-    <div class="preview">Sample Font</div>
+    <!--TYPING AREA-->
     <textarea name="text" placeholder="Type here..." id="text" cols="30" rows="10"></textarea>
+    <!--PREVIEW AREA-->
+
+    <div class="preview">Sample Font</div>
   </main>
 
   <!--Bootstrap JS-->
@@ -108,7 +119,7 @@
 
   <!--JS-->
   <script src="js/main.js"></script>
- 
+
 
 </body>
 
