@@ -1,0 +1,19 @@
+/* COLOURS */
+$primary-green: #00916E;
+$accent-green:  #D9F2DF;
+$body-color: #504856;
+$type-box: #F2F1F3;
+$white: #FFFFFF;
+
+/*MOBILE*/
+@media (min-width: 320px) and (max-width: 480px) {}
+
+/*MOBILE LANDSCAPE*/
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/*DESKTOP*/
+@media (min-width: 1025px) {}

@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<head> 
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Font!</title>
   <meta name="description" content="Preview some web safe CSS fonts">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,86 +13,104 @@
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!--CSS Stylesheet-->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="">
 
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pirata+One&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Font!</h1>
-    <h2>Test out some web safe fonts </h2>
-  </header>
   <main>
-    <div class="form-container">
+    <header class="col-12">
+      <h1>Font!</h1>
+      <h2>Sample Web Safe Fonts</h2>
+    </header>
+    <!--FORM SECTION BEGINS-->
+    <section id="form-container" class="col-12">
       <form method="POST">
-        <div class="third">
-          Font Family <select name="font" id="font">
-
-            <option value="select" id="select">Select</option>
-            <option value="andale mono" id="andale-mono">Andale Mono</option>
-            <option value="arial" id="arial">Arial</option>
-            <option value="arial black" id="arial-black">Arial Black</option>
-            <option value="arial narrow" id="arial-narrow">Arial Narrow</option>
-            <option value="avant garde" id="avant-gare">Avant Garde</option>
-            <option value="baskerville" id="baskerville">Baskerville</option>
-            <option value="big caslon" id="big-caslon">Big Caslon</option>
-            <option value="bodoni mt" id="bodoni-mt">Bodoni MT</option>
-            <option value="book antiqua" id="book-antiqua">Book Antiqua</option>
-            <option value="calibri" id="calibri">Calibri</option>
-            <option value="calisto mt" id="calisto-mt">Calisto MT</option>
-            <option value="cambria" id="cambria">Cambria</option>
-            <option value="candara" id="candara">Candara</option>
-            <option value="consolas" id="consolas">Consolas</option>
-            <option value="courier" id="courier">Courier</option>
-            <option value="courier new" id="courier-new">Courier New</option>
-            <option value="century gothic" id="century-gothic">Century Gothic</option>
-            <option value="didot" id="didot">Didot</option>
-            <option value="franklin gothic medium" id="franklin-gothic-medium">Franklin Gothic Medium</option>
-            <option value="futura" id="futura">Futura</option>
-            <option value="garamond" id="garamond">Garamond</option>
-            <option value="geneva" id="geneva">Geneva</option>
-            <option value="georgia" id="georgia">Georgia</option>
-            <option value="goudy old style" id="goudy-old-style">Goudy Old Style</option>
-            <option value="gill sans" id="gill-sans">Gill Sans</option>
-            <option value="helvetica" id="helvetica">Helvetica</option>
-            <option value="hoefler text" id="hoefler-text">Hoefler Text</option>
-            <option value="impact" id="impact">Impact</option>
-            <option value="lucida bright" id="lucida-bright">Lucida Bright</option>
-            <option value="lucida console" id="lucida-console">Lucida Console</option>
-            <option value="lucida grande" id="lucida-grande">Lucida Grande</option>
-            <option value="lucida sans typewriter" id="lucida-sans-typewriter">Lucida Sans Typerwriter</option>
-            <option value="monaco" id="monaco">Monaco</option>
-            <option value="optima" id="optima">Optima</option>
-            <option value="palatino" id="palatino">Palatino</option>
-            <option value="perpetua" id="perpetua">Perpetua</option>
-            <option value="rockwell" id="rockwell">Rockwell</option>
-            <option value="segoe ui" id="segoe-ui">Segoe UI</option>
-            <option value="tahoma" id="tahoma">Tahoma</option>
-            <option value="times new roman" id="times-new-roman">Times New Roman</option>
-            <option value="trebuchet ms" id="trebuchet-ms">Trebuchet MS</option>
-            <option value="verdana" id="verdana">Verdana</option>
-          </select>
-        </div>
-        <div class="third" id="font-size">
-          Font Size
-          <br>
-          <input type="text" placeholder="12" id="size">
-        </div>
-        <div class="third">
-          Font Weight <select name="weight" id="weight">
-            <option value="select">Select</option>
-            <option value="normal">Normal</option>
-            <option value="bold">Bold</option>
-            <option value="bolder">Bolder</option>
-            <option value="lighter">Lighter</option>
-          </select>
+        <div class="form-options">
+          <div id="font-family" class="option">
+            <h3>Font Family</h3>
+              <!--FONT FAMILY OPTIONS BEGIN-->
+            <select name="font" id="font">
+              <option value="select" id="select">Select</option>
+              <option value="andale mono" id="andale-mono">Andale Mono</option>
+              <option value="arial" id="arial">Arial</option>
+              <option value="arial black" id="arial-black">Arial Black</option>
+              <option value="arial narrow" id="arial-narrow">Arial Narrow</option>
+              <option value="avant garde" id="avant-gare">Avant Garde</option>
+              <option value="baskerville" id="baskerville">Baskerville</option>
+              <option value="big caslon" id="big-caslon">Big Caslon</option>
+              <option value="bodoni mt" id="bodoni-mt">Bodoni MT</option>
+              <option value="book antiqua" id="book-antiqua">Book Antiqua</option>
+              <option value="calibri" id="calibri">Calibri</option>
+              <option value="calisto mt" id="calisto-mt">Calisto MT</option>
+              <option value="cambria" id="cambria">Cambria</option>
+              <option value="candara" id="candara">Candara</option>
+              <option value="consolas" id="consolas">Consolas</option>
+              <option value="courier" id="courier">Courier</option>
+              <option value="courier new" id="courier-new">Courier New</option>
+              <option value="century gothic" id="century-gothic">Century Gothic</option>
+              <option value="didot" id="didot">Didot</option>
+              <option value="franklin gothic medium" id="franklin-gothic-medium">Franklin Gothic Medium</option>
+              <option value="futura" id="futura">Futura</option>
+              <option value="garamond" id="garamond">Garamond</option>
+              <option value="geneva" id="geneva">Geneva</option>
+              <option value="georgia" id="georgia">Georgia</option>
+              <option value="goudy old style" id="goudy-old-style">Goudy Old Style</option>
+              <option value="gill sans" id="gill-sans">Gill Sans</option>
+              <option value="helvetica" id="helvetica">Helvetica</option>
+              <option value="hoefler text" id="hoefler-text">Hoefler Text</option>
+              <option value="impact" id="impact">Impact</option>
+              <option value="lucida bright" id="lucida-bright">Lucida Bright</option>
+              <option value="lucida console" id="lucida-console">Lucida Console</option>
+              <option value="lucida grande" id="lucida-grande">Lucida Grande</option>
+              <option value="lucida sans typewriter" id="lucida-sans-typewriter">Lucida Sans Typerwriter</option>
+              <option value="monaco" id="monaco">Monaco</option>
+              <option value="optima" id="optima">Optima</option>
+              <option value="palatino" id="palatino">Palatino</option>
+              <option value="perpetua" id="perpetua">Perpetua</option>
+              <option value="rockwell" id="rockwell">Rockwell</option>
+              <option value="segoe ui" id="segoe-ui">Segoe UI</option>
+              <option value="tahoma" id="tahoma">Tahoma</option>
+              <option value="times new roman" id="times-new-roman">Times New Roman</option>
+              <option value="trebuchet ms" id="trebuchet-ms">Trebuchet MS</option>
+              <option value="verdana" id="verdana">Verdana</option>
+            </select>
+              <!--FONT FAMILY OPTIONS END-->
+          </div>
+          <!--FONT SIZE OPTION-->
+          <div id="font-size" class="option">
+              <h3>Font Size</h3>
+              <input type="text" placeholder="12" id="size">
+          </div>
+           <!--FONT WEIGHT OPTION-->
+          <div id="font-weight" class="option">
+              <h3>Font Weight</h3>
+              <select name="weight" id="weight">
+                <option value="normal">Normal</option>
+                <option value="lighter">Lighter</option>
+                <option value="bold">Bold</option>
+                <option value="bolder">Bolder</option>
+              </select>
+          </div>
         </div>
       </form>
-    </div>
-    <div class="preview">Sample Font</div>
-    <textarea name="text" placeholder="Type here..." id="text" cols="30" rows="10"></textarea>
+    </section>
+      <!--FORM SECTION ENDS-->
+
+       <!--TEXT PREVIEW SECTION-->
+    <section id="text-container">
+        <div class="type-box">
+            <textarea name="text" placeholder="Type here..." id="text"></textarea>
+        </div>
+        <div class="preview-box"><p>Sample font...</p></div>
+    </section>
   </main>
 
   <!--Bootstrap JS-->
@@ -108,7 +126,6 @@
 
   <!--JS-->
   <script src="js/main.js"></script>
- 
 
 </body>
 
