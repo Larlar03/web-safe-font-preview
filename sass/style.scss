@@ -1,19 +1,105 @@
 /* COLOURS */
 $primary-green: #00916E;
-$accent-green:  #D9F2DF;
+$accent-green: #D9F2DF;
 $body-color: #504856;
 $type-box: #F2F1F3;
 $white: #FFFFFF;
 
-/*MOBILE*/
-@media (min-width: 320px) and (max-width: 480px) {}
+/*-----------------------------------MOBILE-----------------------------------*/
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        background-color: $accent-green;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: $body-color;
 
-/*MOBILE LANDSCAPE*/
+        main {
+            width: 85%;
+            height: 100%;
+            margin: 0 auto;
 
+            header {
+                width: 100%;
+                height: 260px;
+                text-align: center;
+
+                h1 {
+                    font-family: 'Pirata One', cursive;
+                    font-size: 9rem;
+                    color: $primary-green;
+                    padding: 10px 0 0 0;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    color: $primary-green;
+                }
+            }
+
+            section#content-container {
+                width: 100%;
+                height: auto;
+                margin: 0 0 20px 0;
+                background-color: $primary-green;
+                border-radius: 5px;
+                display: flex;
+                flex-flow: column nowrap;
+                align-content: center;
+
+                /*Form*/
+                section#form-container {
+                    width: 97%;
+                    height: auto;
+                    margin: 20px auto;
+
+                    form {
+                        h3 {
+                            font-size: 1.125rem;
+                            font-weight: 400;
+                            color: $white;
+                        }
+
+                        .form-control{
+                                margin: 0 auto 20px auto;
+                                border-radius: 3px;
+                    
+                            .custom-select {
+                            }
+
+                        }
+                        input#size {
+                            padding-left: 15px;
+                        }
+                    }
+                }
+
+                /*Text*/
+                section#text-container {
+
+                    /*Type Box*/
+                    div.type-box {
+                        textarea {}
+                    }
+
+                    /*Preview Box*/
+                    div.preview-box {}
+                }
+            }
+
+        }
+    }
+}
+
+
+/*-----------------------------------MOBILE LANDSCAPE-----------------------------------*/
 @media (min-width: 481px) and (max-width: 767px) {}
 
-/*TABLET*/
+/*-----------------------------------TABLET-----------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {}
 
-/*DESKTOP*/
+/*-----------------------------------DESKTOP-----------------------------------*/
 @media (min-width: 1025px) {}

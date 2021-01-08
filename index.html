@@ -13,7 +13,7 @@
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
   <!--CSS Stylesheet-->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/style.css">
 
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,6 +30,7 @@
       <h1>Font!</h1>
       <h2>Sample Web Safe Fonts</h2>
     </header>
+    <section id="content-container">
     <!--FORM SECTION BEGINS-->
     <section id="form-container" class="col-12">
       <form method="POST">
@@ -37,7 +38,7 @@
           <div id="font-family" class="option">
             <h3>Font Family</h3>
               <!--FONT FAMILY OPTIONS BEGIN-->
-            <select name="font" id="font">
+            <select name="font" id="font" class="custom-select form-control form-control-sm">
               <option value="select" id="select">Select</option>
               <option value="andale mono" id="andale-mono">Andale Mono</option>
               <option value="arial" id="arial">Arial</option>
@@ -84,21 +85,24 @@
             </select>
               <!--FONT FAMILY OPTIONS END-->
           </div>
+
+           <!--FONT WEIGHT OPTION-->
+           <div id="font-weight" class="option">
+            <h3>Font Weight</h3>
+            <select name="weight" id="weight" class="custom-select form-control form-control-sm">
+              <option value="normal">Normal</option>
+              <option value="lighter">Lighter</option>
+              <option value="bold">Bold</option>
+              <option value="bolder">Bolder</option>
+            </select>
+        </div>
+
           <!--FONT SIZE OPTION-->
           <div id="font-size" class="option">
               <h3>Font Size</h3>
-              <input type="text" placeholder="12" id="size">
+              <input type="text" placeholder="12" id="size" class="form-control-sm form-control"
           </div>
-           <!--FONT WEIGHT OPTION-->
-          <div id="font-weight" class="option">
-              <h3>Font Weight</h3>
-              <select name="weight" id="weight">
-                <option value="normal">Normal</option>
-                <option value="lighter">Lighter</option>
-                <option value="bold">Bold</option>
-                <option value="bolder">Bolder</option>
-              </select>
-          </div>
+          
         </div>
       </form>
     </section>
@@ -111,6 +115,7 @@
         </div>
         <div class="preview-box"><p>Sample font...</p></div>
     </section>
+  </section>
   </main>
 
   <!--Bootstrap JS-->
