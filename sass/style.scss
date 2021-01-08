@@ -6,7 +6,7 @@ $type-box: #F2F1F3;
 $white: #FFFFFF;
 
 /*-----------------------------------MOBILE-----------------------------------*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
     body {
         width: 100vw;
         height: 100%;
@@ -31,10 +31,11 @@ $white: #FFFFFF;
                     font-size: 9rem;
                     color: $primary-green;
                     padding: 10px 0 0 0;
+                    margin: 0;
                 }
 
                 h2 {
-                    font-size: 1.25rem;
+                    font-size: 1.30rem;
                     font-weight: 500;
                     color: $primary-green;
                 }
@@ -57,36 +58,55 @@ $white: #FFFFFF;
                     margin: 20px auto;
 
                     form {
-                        h3 {
+                        label {
                             font-size: 1.125rem;
-                            font-weight: 400;
+                            font-weight: 00;
                             color: $white;
                         }
 
-                        .form-control{
-                                margin: 0 auto 20px auto;
-                                border-radius: 3px;
-                    
-                            .custom-select {
-                            }
-
+                        .form-control {
+                            margin: 0 auto 20px auto;
+                            border-radius: 3px;
                         }
+
+                        .custom-select {
+                            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23504856' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+                            background-color: #fff;
+                        }
+
                         input#size {
                             padding-left: 15px;
+
+                            &::placeholder {
+                                color: #6D7882;
+                            }
                         }
                     }
                 }
 
-                /*Text*/
+                /*Text Area*/
                 section#text-container {
+                    width: 87.5%;
+                    height: auto;
+                    margin: 0 auto;
 
                     /*Type Box*/
-                    div.type-box {
-                        textarea {}
+                    .type-box {
+                        textarea {
+                            background: #F2F1F3;
+                        }
                     }
 
                     /*Preview Box*/
-                    div.preview-box {}
+                    .preview-box {
+                        min-height: 182px;
+                        padding: 6px 12px;
+                        margin-bottom: 30px;
+                        background-color: #ffffff;
+                        border-radius: 3px;
+                        color: #1C2826;
+                        overflow-x: scroll;
+                    }
                 }
             }
 
@@ -95,11 +115,129 @@ $white: #FFFFFF;
 }
 
 
-/*-----------------------------------MOBILE LANDSCAPE-----------------------------------*/
-@media (min-width: 481px) and (max-width: 767px) {}
-
 /*-----------------------------------TABLET-----------------------------------*/
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        margin: 0 auto;
+        background-color: $accent-green;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: $body-color;
+
+        main {
+            width: 70%;
+            height: 100%;
+            margin: 50px auto;
+            box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 25%);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+
+            header {
+                width: 100%;
+                height: 320px;
+                text-align: center;
+                background: $primary-green;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+                h1 {
+                    font-family: 'Pirata One', cursive;
+                    font-size: 13rem;
+                    color: $accent-green;
+                    padding: 10px 0 0 0;
+                    margin: 0;
+
+                }
+
+                @supports (-webkit-text-stroke: 3px $accent-green) {
+                    h1 {
+                        -webkit-text-stroke: 3px $accent-green;
+                        -webkit-text-fill-color: $primary-green;
+                    }
+                }
+
+                h2 {
+                    font-size: 1.30rem;
+                    font-weight: 400;
+                    color: $accent-green;
+                }
+            }
+
+            section#content-container {
+                width: 100%;
+                height: auto;
+                margin: 20px 0;
+                background-color: $accent-green;
+                display: flex;
+                flex-flow: column nowrap;
+                align-content: center;
+
+                /*Form*/
+                section#form-container {
+                    width: 80%;
+                    height: auto;
+                    margin: 20px auto;
+
+                    form {
+                        label {
+                            font-size: 1.125rem;
+                            font-weight: 00;
+                            color: $body-color;
+                        }
+
+                        .form-control {
+                            margin: 0 auto 20px auto;
+                            border-radius: 3px;
+                        }
+
+                        .custom-select {
+                            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23504856' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+                            background-color: #fff;
+                        }
+
+                        input#size {
+                            padding-left: 15px;
+
+                            &::placeholder {
+                                color: #6D7882;
+                            }
+                        }
+                    }
+                }
+
+                /*Text Area*/
+                section#text-container {
+                    width: 74%;
+                    height: auto;
+                    margin: 0 auto;
+
+                    /*Type Box*/
+                    .type-box {
+                        textarea {
+                            background: #F2F1F3;
+                        }
+                    }
+
+                    /*Preview Box*/
+                    .preview-box {
+                        min-height: 182px;
+                        max-height: 640px;
+                        padding: 6px 12px;
+                        margin-bottom: 30px;
+                        background-color: #ffffff;
+                        border-radius: 3px;
+                        color: #1C2826;
+                        overflow: scroll;
+                    }
+                }
+            }
+
+        }
+    }
+}
 
 /*-----------------------------------DESKTOP-----------------------------------*/
 @media (min-width: 1025px) {}

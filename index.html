@@ -27,18 +27,17 @@
 <body>
   <main>
     <header class="col-12">
-      <h1>Font!</h1>
+      <h1>font!</h1>
       <h2>Sample Web Safe Fonts</h2>
     </header>
     <section id="content-container">
-    <!--FORM SECTION BEGINS-->
-    <section id="form-container" class="col-12">
-      <form method="POST">
-        <div class="form-options">
-          <div id="font-family" class="option">
-            <h3>Font Family</h3>
-              <!--FONT FAMILY OPTIONS BEGIN-->
-            <select name="font" id="font" class="custom-select form-control form-control-sm">
+      <!--FORM SECTION BEGINS-->
+      <section id="form-container" class="col-12">
+        <form method="POST">
+          <!--FONT FAMILY BEGINS-->
+          <div class="form-group">
+            <label for="fontFamilySelect">Font Family</label>
+            <select name="font" id="font" class="form-control form-control custom-select ">
               <option value="select" id="select">Select</option>
               <option value="andale mono" id="andale-mono">Andale Mono</option>
               <option value="arial" id="arial">Arial</option>
@@ -83,39 +82,36 @@
               <option value="trebuchet ms" id="trebuchet-ms">Trebuchet MS</option>
               <option value="verdana" id="verdana">Verdana</option>
             </select>
-              <!--FONT FAMILY OPTIONS END-->
           </div>
+          <!--FONT FAMILY OPTIONS END-->
 
-           <!--FONT WEIGHT OPTION-->
-           <div id="font-weight" class="option">
-            <h3>Font Weight</h3>
-            <select name="weight" id="weight" class="custom-select form-control form-control-sm">
+          <!--FONT WEIGHT OPTION-->
+          <div class="form-group">
+            <label for="fontWeightSelect">Font Weight</label>
+            <select name="weight" id="weight" class=" form-control custom-select">
               <option value="normal">Normal</option>
               <option value="lighter">Lighter</option>
               <option value="bold">Bold</option>
               <option value="bolder">Bolder</option>
             </select>
-        </div>
+          </div>
 
           <!--FONT SIZE OPTION-->
-          <div id="font-size" class="option">
-              <h3>Font Size</h3>
-              <input type="text" placeholder="12" id="size" class="form-control-sm form-control"
-          </div>
-          
-        </div>
-      </form>
-    </section>
-      <!--FORM SECTION ENDS-->
+          <div id="font-size" class="form-group">
+            <label for="fontSizeInput">Font Size</label>
+            <input type="text" placeholder="16" id="size" class="form-control" </div> </div> </form> </section> <!--FORM
+              SECTION ENDS-->
 
-       <!--TEXT PREVIEW SECTION-->
-    <section id="text-container">
-        <div class="type-box">
-            <textarea name="text" placeholder="Type here..." id="text"></textarea>
-        </div>
-        <div class="preview-box"><p>Sample font...</p></div>
-    </section>
-  </section>
+            <!--TEXT PREVIEW SECTION-->
+            <section id="text-container">
+              <div class=" form-group type-box">
+                <textarea name="text" placeholder="Type here..." id="text" class="form-control" rows="7"></textarea>
+              </div>
+              <div class=" form-group preview-box preview">
+                <p>Sample font...</p>
+              </div>
+            </section>
+      </section>
   </main>
 
   <!--Bootstrap JS-->
