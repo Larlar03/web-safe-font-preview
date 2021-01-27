@@ -283,7 +283,7 @@ $white: #FFFFFF;
 
                     h1 {
                         font-family: 'Pirata One', cursive;
-                        font-size: 15rem;
+                        font-size: 10rem;
                         color: $accent-green;
                         padding: 10px 0 0 0;
                         transform: rotate(-90deg);
@@ -299,7 +299,8 @@ $white: #FFFFFF;
 
                     h2 {
                         width: 60%;
-                        margin: 35px auto 0 auto;
+                        margin:0 auto;
+                        padding-top: 50px;
                         font-size: 1.33rem;
                         font-weight: 400;
                         color: $accent-green;
@@ -325,7 +326,7 @@ $white: #FFFFFF;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
                 overflow-y: scroll;
-
+                cursor: all-scroll;
 
                 /*Form*/
                 section#form-container {
